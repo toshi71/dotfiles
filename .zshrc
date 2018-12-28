@@ -34,7 +34,7 @@ alias ghci="stack ghc -- --interactive"
 alias runghc="stack runghc --"
 alias lsa="ls -alh"
 alias vi="nvim"
-alias odup="onedrive --synchronize --upload-only"
+alias odup="onedrive --synchronize --single-directory 'JRDB'"
 
 # --------------
 # プラグイン
