@@ -1,4 +1,8 @@
 [[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
@@ -16,9 +20,10 @@ hook_add = '''
 colorscheme onedark
 '''
 
-[[plugins]]
-repo = 'w0rp/ale'
-hook_add = 'source ~/.config/nvim/ale.vim'
+# [[plugins]]
+# repo = 'w0rp/ale'
+# hook_source = 'let g:ale_completion_enabled = 1'
+# hook_add = 'source ~/.config/nvim/ale.vim'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'

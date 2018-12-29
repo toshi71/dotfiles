@@ -1,3 +1,4 @@
+"deinの設定
 if &compatible
   set nocompatible
 endif

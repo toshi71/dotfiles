@@ -1,6 +1,26 @@
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-on_event = 'InsertEnter'
+repo = 'eagletmt/neco-ghc'
+on_ft = ['haskell']
+
+[[plugins]]
+repo = 'eagletmt/ghcmod-vim'
+on_ft = ['haskell']
 hook_add = '''
-  source ~/.config/nvim/plugins/deoplete.vim
+source ~/.config/nvim/plugins/ghcmod-vim.vim
+'''
+
+[[plugins]]
+repo = 'itchyny/vim-haskell-indent'
+on_ft = ['haskell']
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_i = 1
+hook_source = '''
+let g:deoplete#enable_at_startup = 1
+source ~/.config/nvim/plugins/deoplete.vim
 '''

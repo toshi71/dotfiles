@@ -1,3 +1,6 @@
+# PATHの設定
+export PATH=~/.local/bin:$PATH
+
 # zplugがなければzplugをインストール後zshを再起動
 if [ ! -e "${HOME}/.zplug/init.zsh" ]; then
   curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
