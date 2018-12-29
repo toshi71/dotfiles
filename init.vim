@@ -24,4 +24,13 @@ set clipboard=unnamed "yank した文字列をクリップボードにコピー
 set hls               "検索した文字をハイライトする
 set ambiwidth=double
 set laststatus=2
+set sh=zsh
 
+"----------
+"折りたたみ
+"----------
+set foldmethod=indent "折りたたみ範囲をインデントで自動設定
+set foldlevel=2
+set foldcolumn=3
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
